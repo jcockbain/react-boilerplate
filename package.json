@@ -4,7 +4,7 @@
   "description": "This is my personal React boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./test"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/jcockbain96/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/jcockbain96/react-boilerplate#readme"
+  "homepage": "https://github.com/jcockbain96/react-boilerplate#readme",
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.11.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./test/enzyme.setup.js"
+    ]
+  }
 }
