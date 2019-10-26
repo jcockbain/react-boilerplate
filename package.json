@@ -1,0 +1,20 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "This is my personal React boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcockbain96/react-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcockbain96/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jcockbain96/react-boilerplate#readme"
+}
