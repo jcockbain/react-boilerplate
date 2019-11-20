@@ -1,0 +1,17 @@
+.header {
+  padding: .5rem .5rem;
+  min-height: 2rem;
+  background: #8186D5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  margin: 1%
+}
+
+.logo {
+  width: 5%;
+}
