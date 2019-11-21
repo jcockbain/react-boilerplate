@@ -1,36 +1,40 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const path = require('path');
-const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   entry: {
-    main: './src/index.jsx',
+    main: './src/index.jsx'
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./dist'),
+    path: path.resolve('./dist')
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: ['/node_modules'],
-        use: [{ loader: 'babel-loader' }],
+        use: [
+          {
+            loader: 'babel-loader'
+          }
+        ]
       },
       {
         test: /\.s(a|c)ss/,
         use: [
           {
-            loader: 'style-loader',
+            loader: 'style-loader'
           },
           {
-            loader: 'css-loader',
+            loader: 'css-loader'
           },
           {
-            loader: 'sass-loader',
-          },
-        ],
+            loader: 'sass-loader'
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -41,11 +45,11 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                localIdentName: '[name]__[local]--[hash:base64:5]',
-              },
-            },
-          },
-        ],
+                localIdentName: '[name]__[local]--[hash:base64:5]'
+              }
+            }
+          }
+        ]
       },
       {
         test: /\.(png|jp(e*)g|svg)$/,
@@ -54,21 +58,23 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8000, // Convert images < 8kb to base64 strings
-              name: 'images/[hash]-[name].[ext]',
-            },
-          },
-        ],
-      },
-    ],
+              name: 'images/[hash]-[name].[ext]'
+            }
+          }
+        ]
+      }
+    ]
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: 'index.html',
+      template: 'index.html'
     }),
     new CleanWebpackPlugin(),
-    new webpack.EnvironmentPlugin({ ...process.env }),
-  ],
-};
+    new webpack.EnvironmentPlugin({
+      ...process.env
+    })
+  ]
+}
