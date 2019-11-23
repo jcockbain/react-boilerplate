@@ -1,7 +1,7 @@
 # react-boilerplate
 
 ![CI Status](https://github.com/jcockbain/react-boilerplate/workflows/Node%20CI/badge.svg)
-![Netlify Status](https://api.netlify.com/api/v1/badges/80d35210-cf89-4452-a3bf-7cc06f0bae5e/deploy-status)]
+![Netlify Status](https://api.netlify.com/api/v1/badges/80d35210-cf89-4452-a3bf-7cc06f0bae5e/deploy-status)
 
 This is my personal React boilerplate
 
