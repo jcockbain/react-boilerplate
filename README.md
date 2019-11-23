@@ -8,7 +8,7 @@ This is my personal React boilerplate
 
 ### Develop Locally
 
-```
+```bash
 npm install
 npm start
 ```
@@ -19,7 +19,7 @@ The page will automatically reload upon any changes.
 
 ### Production Build
 
-```
+```bash
 npm run build
 ```
 
