@@ -1,5 +1,7 @@
 # react-boilerplate
 
+![] https://github.com/jcockbain/express-boilerplate/workflows/Node%20CI/badge.svg
+
 This is my personal React boilerplate
 
 ## Instructions
